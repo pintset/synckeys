@@ -54,3 +54,16 @@ sudo systemctl restart bluetooth
 
 ## Issues
 I haven't found any issues up to now but I also have a limited number of devices on which I can test. Feel free to create a GitHub issue describing your problem and I'll try to take a look. If you know how to fix the code, feel free to submit a PR and I'll include it after reviewing.
+
+## Kugeleis
+
+Important issues that is required for my mouse
+https://github.com/ademlabs/synckeys/issues/2
+
+Modern BLE devices alter their MAC address with each new pairing.Hence your script doesn't find the in OS1 paired device in OS2.
+Just copy the setup in OS2 (Linux) to a folder with the MAC address as used in windows helps:
+First
+
+sudo cp -r /var/lib/bluetooth/<adapter>/<in-linux-paired-MAC> /var/lib/bluetooth/<adapter>/<in-windows-paired-MAC>
+
+and then run your script works.
