@@ -57,7 +57,7 @@ I haven't found any issues up to now but I also have a limited number of devices
 
 ## Kugeleis
 
-Important issues that is required for my mouse
+Important issue resolution. Required for my mouse
 https://github.com/ademlabs/synckeys/issues/2
 
 Modern BLE devices alter their MAC address with each new pairing.Hence your script doesn't find the in OS1 paired device in OS2.
