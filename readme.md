@@ -64,6 +64,8 @@ Modern BLE devices alter their MAC address with each new pairing.Hence your scri
 Just copy the setup in OS2 (Linux) to a folder with the MAC address as used in windows helps:
 First
 
+```
 sudo cp -r /var/lib/bluetooth/<adapter>/<in-linux-paired-MAC> /var/lib/bluetooth/<adapter>/<in-windows-paired-MAC>
+```
 
 and then run your script works.
