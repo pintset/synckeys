@@ -69,3 +69,9 @@ sudo cp -r /var/lib/bluetooth/<adapter>/<in-linux-paired-MAC> /var/lib/bluetooth
 ```
 
 and then run your script works.
+
+E.g.
+
+```
+sudo cp -r /var/lib/bluetooth/A4:7E:EA:CC:24:E2/D9:BB:4C:23:91:98 /var/lib/bluetooth/A4:7E:EA:CC:24:E2/D9:BB:4C:23:91:99
+```
